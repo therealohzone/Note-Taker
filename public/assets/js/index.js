@@ -102,7 +102,7 @@ const renderNoteList = async (notes) => {
   let noteListItems = [];
 
   // Returns HTML element with or without a delete button
-  const createLi = (text, delBtn = true) => {
+  const createLi = (text = true) => {
     const liEl = document.createElement('li');
     liEl.classList.add('list-group-item');
 
@@ -113,8 +113,6 @@ const renderNoteList = async (notes) => {
 
     liEl.append(spanEl);
 
-
-    return liEl;
   };
 
   if (jsonNotes.length === 0) {

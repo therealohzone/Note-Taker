@@ -2,8 +2,8 @@ const express = require('express');
 const apiRoutes = require('./routes/apiRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
 
-// Create a port
 const app = express();
+// Create a port
 const PORT = process.env.PORT || 3001;
 
 // middleware
